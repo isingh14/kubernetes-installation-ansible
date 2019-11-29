@@ -9,7 +9,7 @@
     shell: kubeadm config images pull
 
   - name: Initializing Kubernetes cluster
-    shell: kubeadm init --apiserver-advertise-address {{ad_addr}} --pod-network-cidr={{cidr_v}} --ignore-preflight-errors
+    shell: kubeadm init --apiserver-advertise-address {{ad_addr}} --pod-network-cidr={{cidr_v}} --ignore-preflight-errors=all
     register: output
 
   - name: Storing Logs and Generated token for future purpose.
