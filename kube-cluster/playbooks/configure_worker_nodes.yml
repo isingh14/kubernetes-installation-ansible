@@ -1,6 +1,6 @@
 ---
 - hosts: kubernetes_worker_nodes
-  user: ec2-user
+  user: centos
   become: true
   vars_files:
   - env_variables
