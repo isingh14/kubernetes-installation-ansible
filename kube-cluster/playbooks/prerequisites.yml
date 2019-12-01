@@ -13,3 +13,10 @@
      path: /etc/fstab
      regexp: '(.*swap*)'
      replace: '#\1'
+
+  - name: disable SELinux
+    command: setenforce 0
+
+  - name: disable SELinux on reboot
+    selinux:
+     state: disabled
