@@ -39,7 +39,7 @@ This repository has set of ansible playbooks created to setup a kubernetes clust
 
     kubectl get nodes
 
-# What are the files this repository has?:
+# Files in this repository:
 
     ansible.cfg - Ansible configuration file created locally.
 
